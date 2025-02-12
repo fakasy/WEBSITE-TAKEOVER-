@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://unpkg.com/tailwindcss@^2.2/dist/tailwind.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css">
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="gambar/NOLYXHD.png">
+    <title>Nolyx Design</title>
+    <style>
+
+        .hero-section {
+            background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('/api/placeholder/1200/400');
+            background-size: cover;
+            background-position: center;
+
+        }
+
+    </style>
+</head>
+<body class="bg-gradient-to-r from-green-400 to-green-600 bg-size-200 bg-pos-0 animation" style="background-size: 200% 200%; background-position: 0% 0%; animation: gradient 2s ease infinite;
+    @keyframes gradient {
+        0% {
+            background-position: 0% 0%;
+        }
+        50% {
+            background-position: 100% 0%;
+        }
+        100% {
+            background-position: 0% 0%;
+        }
+    }">
+    <nav class="fixed top-0 w-full bg-white shadow-lg z-30 mt-0  -mb-16">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="flex justify-between h-16">
+                <div class="flex items-center space-x-4">
+                    <img src="gambar/NOLYXHD.png" alt="Nolyx" class="h-10 w-10">
+                    <span id="vermin" class="text-2xl font-bold text-green-700">Nolyx</span>
+                </div>
+
+                <!-- Desktop Menu -->
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="products.html" class="font-medium text-gray-700 hover:text-green-700 transition-colors">All Products</a>
+                    <a href="products.html?category=shirts" class="font-medium text-gray-700 hover:text-green-700 transition-colors">Shirts</a>
+                    <a href="products.html?category=hoodies"   class="font-medium text-gray-700 hover:text-green-700 transition-colors">Hoodies</a>
+                    <a href="products.html?category=totebag" class="font-medium text-gray-700 hover:text-green-700 transition-colors">Tote Bags</a>
+                    <a href="products.html?category=caps" class="font-medium text-gray-700 hover:text-green-700 transition-colors">Caps</a>
+                    
+                    <div class="relative">
+                        <a href="cart.html" class="text-gray-700 hover:text-green-700">
+                            <i class="fas fa-shopping-cart text-xl"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <div class="md:hidden flex items-center">
+                    <button class="mobile-menu-button text-gray-700 p-2" >
+                        <i class="fas fa-bars text-xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Enhanced Mobile Menu -->
+        <div class="mobile-menu hidden md:hidden bg-white border-t" >
+            <div class="px-4 py-2 space-y-3">
+                <a href="products.html" class="block py-2 text-gray-700 hover:text-green-700">All Products</a>
+                <a href="products.html?category=shirts" class="block py-2 text-gray-700 hover:text-green-700">Shirts</a>
+                <a href="products.html?category=hoodies" class="block py-2 text-gray-700 hover:text-green-700">Hoodies</a>
+                <a href="products.html?category=totebag" class="block py-2 text-gray-700 hover:text-green-700">Tote Bags</a>
+                <a href="products.html?category=caps" class="block py-2 text-gray-700 hover:text-green-700">Caps</a>
+                <div class="py-2">
+                    <a href="cart.html" class="flex items-center text-gray-700">
+                        <i class="fas fa-shopping-cart mr-2"></i>
+                        Cart 
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section h-96 flex items-center justify-center text-white mt-16">
+        <div class="text-center">
+            <h1 id="vermin" class="text-4xl md:text-6xl font-bold mb-4 animate-b">Nolyx Design</h1>
+            <a href="products.html" class="bg-green-700 hover:bg-green-800 text-white px-8 py-3 rounded-full transition-colors animate-pulse">
+                Shop Now
+            </a>
+
+        </div>
+    </section>
+    <section id="category" class="py-16 bg-gray-100">
+        <div class="max-w-7xl mx-auto px-4">
+            <h2 class="text-3xl font-bold text-gray-800 mb-8">Shop by Category</h2>
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+                <a href="products.html?category=shirts" class="relative group overflow-hidden rounded-lg">
+                    <img src="https://gifdb.com/images/high/large-white-and-black-shirts-f4zw2pj0i34zm5jv.gif" alt="Shirt" class="w-full h-48 object-cover transition-transform duration-300 group-hover:scale-110">
+                    <div class="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center">
+                        <span class="text-white text-xl font-bold">Shirt</span>
+                    </div>
+                </a>
+                <a href="products.html?category=hoodies" class="relative group overflow-hidden rounded-lg">
+                    <img src="https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExcWFnM2llNjI1cTFqcTdwY292ZTNyMmtvdGZzejllb3VwMG01dG16NSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/JsyNAK3IYVY9n7n2XW/giphy.gif" alt="Hoodies" class="w-full h-48 object-cover transition-transform duration-300 group-hover:scale-110">
+                    <div class="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center">
+                        <span class="text-white text-xl font-bold">Hoodies</span>
+                    </div>
+                </a>
+                <a href="products.html?category=totebag" class="relative group overflow-hidden rounded-lg">
+                    <img src="https://media2.giphy.com/media/tsTJIsjnm4vsVr1YZL/giphy.gif" alt="Pants" class="w-full h-48 object-cover transition-transform duration-300 group-hover:scale-110">
+                    <div class="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center">
+                        <span class="text-white text-xl font-bold">Totebag</span>
+                    </div>
+                </a>
+                <a href="products.html?category=caps" class="relative group overflow-hidden rounded-lg">
+                    <img src="https://c.tenor.com/gKybciq8I88AAAAC/caps.gif" alt="Caps" class="w-full h-48 object-cover transition-transform duration-300 group-hover:scale-110">
+                    <div class="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center">
+                        <span class="text-white text-xl font-bold">Caps</span>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+    <section id="fav" class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="flex justify-between items-center mb-8">
+                <h2 class="text-3xl font-bold text-gray-800">Best Sellers</h2>
+                <div class="hidden md:block">
+                    <div class="flex items-center space-x-2 text-sm text-gray-500">
+                        <i class="fas fa-fire text-orange-500"></i>
+                        <span>Popular right now</span>
+                    </div>
+                </div>
+            </div>
+            <div class="product-grid grid grid-cols-2 md:grid-cols-4 gap-4" id="best-sellers-container">
+                <!-- Products will be loaded here -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Load products.js first -->
+    <script src="products.js"></script>
+    
+    <!-- Main script -->
+    <script>
+        function loadBestSellers() {
+            // Flatten all products into a single array
+            const allProducts = [
+                ...products.shirts,
+                ...products.hoodies,
+                ...products.totebag,
+                ...products.caps.filter(cap => cap !== null) // Filter out any null entries
+            ].filter(product => product); // Filter out any undefined/null products
+
+            // Shuffle array
+            const shuffled = allProducts.sort(() => 0.5 - Math.random());
+            // Get first 4 items
+            const selectedProducts = shuffled.slice(0, 4);
+
+            // Labels and colors for badges
+            const labels = ['New', 'Hot', 'Trending', 'Best Seller'];
+            const labelColors = {
+                'New': 'bg-green-700',
+                'Hot': 'bg-red-600',
+                'Trending': 'bg-purple-600',
+                'Best Seller': 'bg-yellow-600'
+            };
+
+            // Get container
+            const container = document.getElementById('best-sellers-container');
+            
+            // Generate HTML for each product
+            const productsHTML = selectedProducts.map((product, index) => {
+    const label = labels[index];
+    return `
+        <div id="${product.id}" class="product-card bg-white relative group overflow-hidden rounded-lg">
+            <div class="relative">
+                <img src="${product.image}" alt="${product.title}" class="w-full h-40 md:h-64 object-cover">
+                <div class="absolute top-2 right-2">
+                    <span class="${labelColors[label]} text-white px-2 py-1 rounded-full text-xs md:text-sm font-medium">
+                        ${label}
+                    </span>
+                </div>
+            </div>
+            <div class="p-3 md:p-6">
+                <h3 class="text-sm md:text-lg font-semibold mb-2 md:mb-3">${product.title}</h3>
+                <div class="flex justify-between items-center mb-2 md:mb-4">
+                    <span class="text-green-700 font-bold text-sm md:text-xl">from $${product.price}</span>
+                    <div class="flex items-center">
+                        <i class="fas fa-star text-yellow-400 text-xs md:text-base"></i>
+                        <span class="ml-1 text-gray-600 text-xs md:text-base"> 
+                            ${(Math.random() * (4.0 - 3.0 + 1) + 3.0).toFixed(1)}
+                        </span>
+                    </div>
+                </div>
+                <div class="flex space-x-2 md:space-x-3">
+                    <a href="${product.buyLink}" target="_blank" 
+                       class="flex-1 flex items-center justify-center bg-green-700 hover:bg-green-800 text-white py-2 md:py-3 px-2 md:px-4 rounded-lg transition-colors shadow-md group">
+                        <span class="text-sm md:text-base font-bold group-hover:scale-105 transform transition-transform">Buy Now</span>
+                    </a>
+                    <button onclick="addToCart('${product.id}')" 
+                            class="w-10 md:w-12 flex items-center justify-center bg-gray-700 hover:bg-gray-800 text-white py-2 md:py-3 px-2 md:px-3 rounded-lg transition-colors shadow-md group">
+                        <i class="fas fa-shopping-cart text-sm md:text-base group-hover:scale-110 transform transition-transform"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    `;
+}).join('');
+
+            // Insert into container
+            container.innerHTML = productsHTML;
+        }
+
+        // Load best sellers when document is ready
+        document.addEventListener('DOMContentLoaded', loadBestSellers);
+    </script>
+
+    <!-- Categories Preview -->
+
+
+    <!-- Enhanced Social Media Section -->
+    <section id="socialmedia" class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-4 text-center">
+            <h2 class="text-3xl font-bold text-gray-800 mb-8">Follow Us</h2>
+            <div class="grid grid-cols-4 gap-8 max-w-2xl mx-auto">
+                <a href="https://www.youtube.com/@nolyxdesign/" target="_blank" 
+                   class="flex flex-col items-center p-6 rounded-lg hover:bg-gray-50 transition-colors">
+                    <i class="fab fa-youtube text-5xl text-green-600 mb-4"></i>
+                    <span class="text-gray-800 font-medium">YouTube</span>
+                </a>
+                <a href="https://www.instagram.com/nolyxdesign/" target="_blank"
+                   class="flex flex-col items-center p-6 rounded-lg hover:bg-gray-50 transition-colors">
+                    <i class="fab fa-instagram text-5xl text-green-600 mb-4"></i>
+                    <span class="text-gray-800 font-medium">Instagram</span>
+                </a>
+                <a href="https://www.tiktok.com/@nolyxdesign" target="_blank"
+                   class="flex flex-col items-center p-6 rounded-lg hover:bg-gray-50 transition-colors">
+                    <i class="fab fa-tiktok text-5xl text-green-600 mb-4"></i>
+                    <span class="text-gray-800 font-medium">TikTok</span>
+                </a>
+                <a href="https://www.facebook.com/profile.php?id=61571883386985" target="_blank" class="flex flex-col items-center p-6 rounded-lg hover:bg-gray-50 transition-colors">
+                    <i class="fab fa-facebook text-5xl text-green-600 mb-4"></i>
+                    <span class="text-gray-800 font-medium">Facebook</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Enhanced Designer Section -->
+    <section id="founder" class="py-8 md:py-16 bg-gradient-to-br from-gray-50 to-gray-100 relative overflow-hidden">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-2xl md:text-3xl font-bold text-gray-800 mb-6 md:mb-8 relative">
+                Our Designer
+                <span class="block h-1 w-20 bg-green-600 mt-2"></span>
+            </h2>
+            
+            <div class="carddesign bg-white rounded-2xl shadow-xl overflow-hidden relative z-10 hover:shadow-2xl transition-shadow duration-300">
+                <div class="flex flex-col md:flex-row md:items-center">
+                    <!-- Designer Image Section -->
+                    <div class="w-full md:w-1/4 p-4 md:p-6 flex justify-center">
+                        <div class="relative">
+                            <div class="w-32 h-32 md:w-48 md:h-48 rounded-full overflow-hidden ring-4 ring-green-500 ring-opacity-50">
+                                <img src="gambar/phgyjg.jpg" alt="Designer" class="w-full h-full object-cover">
+                            </div>
+                            <div class="absolute -bottom-2 right-0 bg-green-500 text-white px-2 md:px-3 py-1 rounded-full text-xs md:text-sm font-medium">
+                                Available
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Designer Info Section -->
+                    <div class="p-4 md:p-8 md:w-3/4">
+                        <div class="flex flex-col md:flex-row items-center md:items-start gap-2 md:gap-0 mb-4">
+                            <div class="text-center md:text-left">
+                                <h3 class="text-xl md:text-2xl font-bold text-gray-800">Kasyara</h3>
+                                <p class="text-sm md:text-base text-gray-600">Creative Director & Lead Designer</p>
+                            </div>
+                            <div class="md:ml-auto">
+                                <span class="px-3 md:px-4 py-1 bg-green-100 text-green-800 rounded-full text-xs md:text-sm font-medium">
+                                    ★ Top Rated
+                                </span>
+                            </div>
+                        </div>
+    
+                        <!-- Stats Grid -->
+                        <div class="grid grid-cols-3 gap-2 md:gap-6 mb-6 md:mb-8">
+                            <div class="stats-card text-center p-2 md:p-4 bg-gray-50 rounded-xl hover:bg-green-50 transition-colors duration-300 cursor-pointer border border-gray-100">
+                                <div class="text-lg md:text-2xl font-bold text-green-700">5+</div>
+                                <div class="text-xs md:text-sm text-gray-600">Years Experience</div>
+                            </div>
+                            <div class="stats-card text-center p-2 md:p-4 bg-gray-50 rounded-xl hover:bg-green-50 transition-colors duration-300 cursor-pointer border border-gray-100">
+                                <div class="text-lg md:text-2xl font-bold text-green-700">50+</div>
+                                <div class="text-xs md:text-sm text-gray-600">Projects</div>
+                            </div>
+                            <div class="stats-card text-center p-2 md:p-4 bg-gray-50 rounded-xl hover:bg-green-50 transition-colors duration-300 cursor-pointer border border-gray-100">
+                                <div class="text-lg md:text-2xl font-bold text-green-700">70+</div>
+                                <div class="text-xs md:text-sm text-gray-600">Clients</div>
+                            </div>
+                        </div>
+    
+                        <!-- Skills Tags -->
+                        <div class="space-y-4">
+                            <div class="flex flex-wrap gap-2 md:gap-3 mb-4 md:mb-6">
+                                <span class="px-2 md:px-3 py-1 bg-gray-100 text-gray-700 rounded-full text-xs md:text-sm">UI/UX Design</span>
+                                <span class="px-2 md:px-3 py-1 bg-gray-100 text-gray-700 rounded-full text-xs md:text-sm">Brand Identity</span>
+                                <span class="px-2 md:px-3 py-1 bg-gray-100 text-gray-700 rounded-full text-xs md:text-sm">Logo Design</span>
+                                <span class="px-2 md:px-3 py-1 bg-gray-100 text-gray-700 rounded-full text-xs md:text-sm">Print Design</span>
+                            </div>
+                            
+                            <!-- Action Buttons -->
+                            <div class="flex flex-col md:flex-row gap-3 md:space-x-4">
+                                <a href="https://t.me/YonKasyura?text=Hello%20designer%20I%20would%20like%20to%20request%20a%20design" 
+                                target="_blank" 
+                                   class="flex-1 inline-flex items-center justify-center px-4 md:px-6 py-2 md:py-3 bg-green-600 hover:bg-green-700 text-white rounded-lg shadow-lg hover:shadow-xl transition-all duration-300">
+                                    <svg class="w-4 h-4 md:w-5 md:h-5 mr-2" fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                        <path d="M12 0C5.37 0 0 5.37 0 12s5.37 12 12 12 12-5.37 12-12S18.63 0 12 0zm5.34 8.25l-1.78 8.37c-.13.6-.5.75-1 .47l-2.78-2.05-1.34 1.29c-.15.15-.27.27-.56.27l.2-2.84 5.18-4.67c.23-.2-.05-.31-.35-.12l-6.4 4.03-2.76-.86c-.6-.2-.61-.6.13-.87l10.76-4.15c.5-.17.94.12.7 1.13z"/>
+                                    </svg>
+                                    <span class="text-sm md:text-base">Request Design</span>
+                                </a>
+                                <a href="https://www.paypal.com/paypalme/nolyxxx" target="_blank"  class="px-4 md:px-6 py-2 md:py-3 bg-yellow-500 hover:bg-yellow-600 text-white rounded-lg transition-colors duration-300 flex items-center justify-center" title="Tip for design">
+                                    <i class="fas fa-money-bill-wave mr-2 text-sm md:text-base"></i>
+                                    <span class="text-sm md:text-base">Tip for design</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div id="particles" class="absolute inset-0 pointer-events-none z-0 opacity-50"></div>
+    </section>
+
+    <script src="products.js"></script>
+    <script src="script.js"></script>
+    <script src="cart.js"></script>
+    
+</body>
+</html>
